@@ -72,8 +72,10 @@ The fit uses 2022Q1-2025Q3 (n = 15, R² = 0.93). The level fit is dominated by t
 - Regional MAU Q4'25-Q2'26 carries the −15m / +7.8m Other-Countries discrepancies (INDEX 2), so the Europe free-growth spike is approximate.
 - Not collected: Play Store reviews, contributor dispersion, country Similarweb/Apptopia.
 
-## Suggested final charts (pending your go-ahead)
-1. Weekly app users YoY, three groups + WW, 2021 on, with Sept 15, 2025 and Aug 1, 2026 marked.
-2. Friction − other-EM gap.
-3. Quarterly WW app-implied vs reported ad MAU y/y and subs y/y (shows the 2026 break and the free-minus-paid gap).
-4. Europe/NA MAU vs subs y/y, reported and consensus.
+## Charts (`analysis/charts/`, script `scripts/11_charts.py`)
+1. `01_app_users_yoy_groups.png`: app users YoY by group plus WW, monthly and weekly, 2021 on; Sept 15, 2025 and Aug 1, 2026 marked.
+2. `02_friction_minus_em_gap.png`: India/Indonesia minus Brazil/Mexico/Philippines, weekly and monthly.
+3. `03_app_downloads_yoy_groups.png`: downloads YoY by group, monthly (weekly too volatile to read).
+4. `04_ww_app_vs_reported.png`: reported Ad-Supported MAU and subs y/y vs app-implied, quarterly.
+5. `05_regional_mau_vs_subs.png`: Europe and North America MAU vs subs y/y, reported and consensus.
+6. `06_in_id_spotify_vs_youtube_music.png`: Spotify vs YouTube Music app users YoY, India and Indonesia.
