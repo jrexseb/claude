@@ -1,0 +1,256 @@
+date,country,metric,value,source,flag
+2024Q2,Total,ad_supported_mau,393.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Total,ad_supported_mau,402.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Total,ad_supported_mau,425.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Total,ad_supported_mau,423.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Total,ad_supported_mau,433.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Total,ad_supported_mau,446.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Total,ad_supported_mau,476.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Total,ad_supported_mau,483.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Total,ad_supported_mau,494.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Total,ad_supported_mau,498.21079127922343,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Total,ad_supported_mau,519.9726683068985,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Total,ad_supported_mau,524.3958421226106,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Total,ad_supported_mau,533.6307043065716,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Total,ad_supported_mau,540.8982208802898,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Total,ad_supported_mau,560.6309776092904,Bloomberg MODL SPOTModelBloom-nums.xlsx row 22 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,Total,ad_supported_mau_mau_block,393.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Total,ad_supported_mau_mau_block,402.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Total,ad_supported_mau_mau_block,425.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Total,ad_supported_mau_mau_block,423.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Total,ad_supported_mau_mau_block,433.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Total,ad_supported_mau_mau_block,446.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Total,ad_supported_mau_mau_block,476.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Total,ad_supported_mau_mau_block,483.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Total,ad_supported_mau_mau_block,494.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Total,ad_supported_mau_mau_block,498.21079127922343,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Total,ad_supported_mau_mau_block,519.9726683068985,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Total,ad_supported_mau_mau_block,524.3958421226106,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Total,ad_supported_mau_mau_block,533.6307043065716,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Total,ad_supported_mau_mau_block,540.8982208802898,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Total,ad_supported_mau_mau_block,560.6309776092904,Bloomberg MODL SPOTModelBloom-nums.xlsx row 58 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,Total,free_premium_ratio_modl,1.6234309623430963,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2024Q3,Total,free_premium_ratio_modl,1.5975609756097562,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2024Q4,Total,free_premium_ratio_modl,1.5952380952380953,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2025Q1,Total,free_premium_ratio_modl,1.6159695817490494,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2025Q2,Total,free_premium_ratio_modl,1.578358208955224,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2025Q3,Total,free_premium_ratio_modl,1.568840579710145,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2025Q4,Total,free_premium_ratio_modl,1.5871886120996441,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2026Q1,Total,free_premium_ratio_modl,1.6413793103448275,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2026Q2,Total,free_premium_ratio_modl,1.6484641638225257,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),reported
+2026Q3,Total,free_premium_ratio_modl,1.6466666666666667,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),forecast
+2026Q4,Total,free_premium_ratio_modl,1.6393167653510194,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),forecast
+2027Q1,Total,free_premium_ratio_modl,1.6613001933812648,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),forecast
+2027Q2,Total,free_premium_ratio_modl,1.661760201422354,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),forecast
+2027Q3,Total,free_premium_ratio_modl,1.6567515451431507,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),forecast
+2027Q4,Total,free_premium_ratio_modl,1.6457081577178376,Bloomberg MODL SPOTModelBloom-nums.xlsx row 79 (no field code),forecast
+2024Q2,Europe,mau,174.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Europe,mau,176.58,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Europe,mau,182.25,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Europe,mau,183.06,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Europe,mau,180.96,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Europe,mau,185.38,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Europe,mau,199.16,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Europe,mau,205.25,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Europe,mau,194.25,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Europe,mau,196.47390095056267,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Europe,mau,203.57457704041045,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Europe,mau,203.28332605613795,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Europe,mau,206.67947281428786,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Europe,mau,209.54635166547394,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Europe,mau,215.06777330724847,Bloomberg MODL SPOTModelBloom-nums.xlsx row 61 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,Latin America,mau,136.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Latin America,mau,143.88,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Latin America,mau,148.5,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Latin America,mau,149.16,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Latin America,mau,146.16,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Latin America,mau,149.73,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Latin America,mau,160.86,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Latin America,mau,167.42,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Latin America,mau,163.17,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Latin America,mau,164.88855623393246,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Latin America,mau,171.84292045345717,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Latin America,mau,175.43910775462496,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Latin America,mau,177.7955644279172,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Latin America,mau,180.58919110849558,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Latin America,mau,186.75837084403386,Bloomberg MODL SPOTModelBloom-nums.xlsx row 67 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,North America,mau,112.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,North America,mau,117.72,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,North America,mau,114.75,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,North America,mau,115.26,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,North America,mau,118.32,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,North America,mau,121.21,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,North America,mau,122.56,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,North America,mau,121.76,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,North America,mau,124.32,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,North America,mau,126.04105777836465,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,North America,mau,127.90078676787311,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,North America,mau,129.11531398547973,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,North America,mau,130.60572472991478,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,North America,mau,131.6287037636472,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,North America,mau,133.7392171868515,Bloomberg MODL SPOTModelBloom-nums.xlsx row 64 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,Rest of World,mau_modl_other_countries,204.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Rest of World,mau_modl_other_countries,215.82,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Rest of World,mau_modl_other_countries,229.5,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Rest of World,mau_modl_other_countries,230.52,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Rest of World,mau_modl_other_countries,250.56,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Rest of World,mau_modl_other_countries,256.68,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Rest of World,mau_modl_other_countries,283.42,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Rest of World,mau_modl_other_countries,281.57,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Rest of World,mau_modl_other_countries,287.49,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Rest of World,mau_modl_other_countries,300.4117540315676,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Rest of World,mau_modl_other_countries,316.4483180195263,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Rest of World,mau_modl_other_countries,321.0392061351674,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Rest of World,mau_modl_other_countries,328.67406581414383,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Rest of World,mau_modl_other_countries,336.56019044573156,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Rest of World,mau_modl_other_countries,350.8684059510089,Bloomberg MODL SPOTModelBloom-nums.xlsx row 70 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,Rest of World,mau_row_derived,204.0,derived: row60 - row61 - row64 - row67,reported
+2024Q3,Rest of World,mau_row_derived,201.81999999999994,derived: row60 - row61 - row64 - row67,reported
+2024Q4,Rest of World,mau_row_derived,229.5,derived: row60 - row61 - row64 - row67,reported
+2025Q1,Rest of World,mau_row_derived,230.52,derived: row60 - row61 - row64 - row67,reported
+2025Q2,Rest of World,mau_row_derived,250.55999999999997,derived: row60 - row61 - row64 - row67,reported
+2025Q3,Rest of World,mau_row_derived,256.68000000000006,derived: row60 - row61 - row64 - row67,reported
+2025Q4,Rest of World,mau_row_derived,268.42,derived: row60 - row61 - row64 - row67,reported
+2026Q1,Rest of World,mau_row_derived,266.57000000000005,derived: row60 - row61 - row64 - row67,reported
+2026Q2,Rest of World,mau_row_derived,295.26,derived: row60 - row61 - row64 - row67,reported
+2026Q3,Rest of World,mau_row_derived,300.38233802168145,derived: row60 - row61 - row64 - row67,forecast
+2026Q4,Rest of World,mau_row_derived,316.53442155392986,derived: row60 - row61 - row64 - row67,forecast
+2027Q1,Rest of World,mau_row_derived,320.27778528024885,derived: row60 - row61 - row64 - row67,forecast
+2027Q2,Rest of World,mau_row_derived,328.5559709941634,derived: row60 - row61 - row64 - row67,forecast
+2027Q3,Rest of World,mau_row_derived,335.32260489902046,derived: row60 - row61 - row64 - row67,forecast
+2027Q4,Rest of World,mau_row_derived,349.92059559697566,derived: row60 - row61 - row64 - row67,forecast
+2024Q2,Total,mau_total,626.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Total,mau_total,640.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Total,mau_total,675.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Total,mau_total,678.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Total,mau_total,696.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Total,mau_total,713.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Total,mau_total,751.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Total,mau_total,761.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Total,mau_total,777.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Total,mau_total,787.7858529845412,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Total,mau_total,819.8527058156706,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Total,mau_total,828.1155330764915,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Total,mau_total,843.6367329662831,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Total,mau_total,857.0868514366372,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Total,mau_total,885.4859569351095,Bloomberg MODL SPOTModelBloom-nums.xlsx row 60 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,Total,mau_total_highlights,626.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Total,mau_total_highlights,640.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Total,mau_total_highlights,675.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Total,mau_total_highlights,678.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Total,mau_total_highlights,696.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Total,mau_total_highlights,713.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Total,mau_total_highlights,751.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Total,mau_total_highlights,761.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Total,mau_total_highlights,777.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Total,mau_total_highlights,787.7858529845412,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Total,mau_total_highlights,819.8527058156706,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Total,mau_total_highlights,828.1155330764915,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Total,mau_total_highlights,843.6367329662831,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Total,mau_total_highlights,857.0868514366372,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Total,mau_total_highlights,885.4859569351095,Bloomberg MODL SPOTModelBloom-nums.xlsx row 20 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,Europe,premium_subs,94.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2024Q3,Europe,premium_subs,95.76,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2024Q4,Europe,premium_subs,97.31,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2025Q1,Europe,premium_subs,99.16,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2025Q2,Europe,premium_subs,102.12,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2025Q3,Europe,premium_subs,103.97,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2025Q4,Europe,premium_subs,104.4,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2026Q1,Europe,premium_subs,105.48,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2026Q2,Europe,premium_subs,108.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),reported
+2026Q3,Europe,premium_subs,109.31117,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),forecast
+2026Q4,Europe,premium_subs,111.17815207347182,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),forecast
+2027Q1,Europe,premium_subs,111.45652374204188,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),forecast
+2027Q2,Europe,premium_subs,113.35301770950079,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),forecast
+2027Q3,Europe,premium_subs,114.65938069800787,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),forecast
+2027Q4,Europe,premium_subs,116.67804581874715,Bloomberg MODL SPOTModelBloom-nums.xlsx row 46 (MONTHLY_PAYING_USERS),forecast
+2024Q2,Latin America,premium_subs,54.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2024Q3,Latin America,premium_subs,55.44,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2024Q4,Latin America,premium_subs,57.86,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2025Q1,Latin America,premium_subs,61.64,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2025Q2,Latin America,premium_subs,63.48,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2025Q3,Latin America,premium_subs,64.63,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2025Q4,Latin America,premium_subs,66.7,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2026Q1,Latin America,premium_subs,70.32,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2026Q2,Latin America,premium_subs,72.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),reported
+2026Q3,Latin America,premium_subs,72.91755290290733,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),forecast
+2026Q4,Latin America,premium_subs,75.42288698333338,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),forecast
+2027Q1,Latin America,premium_subs,77.35163815748903,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),forecast
+2027Q2,Latin America,premium_subs,78.96487117745576,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),forecast
+2027Q3,Latin America,premium_subs,80.57579301649507,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),forecast
+2027Q4,Latin America,premium_subs,83.15392371443967,Bloomberg MODL SPOTModelBloom-nums.xlsx row 50 (MONTHLY_PAYING_USERS),forecast
+2024Q2,North America,premium_subs,66.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2024Q3,North America,premium_subs,68.04,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2024Q4,North America,premium_subs,68.38,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2025Q1,North America,premium_subs,69.68,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2025Q2,North America,premium_subs,69.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2025Q3,North America,premium_subs,70.25,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2025Q4,North America,premium_subs,72.5,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2026Q1,North America,premium_subs,73.25,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2026Q2,North America,premium_subs,75.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),reported
+2026Q3,North America,premium_subs,75.61303277299137,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),forecast
+2026Q4,North America,premium_subs,77.142254219115,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),forecast
+2027Q1,North America,premium_subs,77.66585845690827,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),forecast
+2027Q2,North America,premium_subs,78.90657585201113,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),forecast
+2027Q3,North America,premium_subs,79.4749799800841,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),forecast
+2027Q4,North America,premium_subs,81.22279679495718,Bloomberg MODL SPOTModelBloom-nums.xlsx row 48 (MONTHLY_PAYING_USERS),forecast
+2024Q2,Rest of World,premium_subs,32.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2024Q3,Rest of World,premium_subs,35.28,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2024Q4,Rest of World,premium_subs,36.82,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2025Q1,Rest of World,premium_subs,37.52,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2025Q2,Rest of World,premium_subs,41.4,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2025Q3,Rest of World,premium_subs,39.34,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2025Q4,Rest of World,premium_subs,43.5,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2026Q1,Rest of World,premium_subs,43.95,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2026Q2,Rest of World,premium_subs,45.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),reported
+2026Q3,Rest of World,premium_subs,47.28734895240307,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),forecast
+2026Q4,Rest of World,premium_subs,51.354575856403784,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),forecast
+2027Q1,Rest of World,premium_subs,52.191030733222725,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),forecast
+2027Q2,Rest of World,premium_subs,54.34142757236727,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),forecast
+2027Q3,Rest of World,premium_subs,56.428216216340175,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),forecast
+2027Q4,Rest of World,premium_subs,59.1457243050824,Bloomberg MODL SPOTModelBloom-nums.xlsx row 52 (MONTHLY_PAYING_USERS),forecast
+2024Q2,Total,premium_subs,246.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2024Q3,Total,premium_subs,252.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2024Q4,Total,premium_subs,263.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2025Q1,Total,premium_subs,268.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2025Q2,Total,premium_subs,276.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2025Q3,Total,premium_subs,281.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2025Q4,Total,premium_subs,290.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2026Q1,Total,premium_subs,293.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2026Q2,Total,premium_subs,300.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),reported
+2026Q3,Total,premium_subs,301.5774762024936,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),forecast
+2026Q4,Total,premium_subs,309.3320458774145,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),forecast
+2027Q1,Total,premium_subs,315.32958903242417,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),forecast
+2027Q2,Total,premium_subs,320.11083299046606,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),forecast
+2027Q3,Total,premium_subs,326.5009844345703,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),forecast
+2027Q4,Total,premium_subs,333.94075366201974,Bloomberg MODL SPOTModelBloom-nums.xlsx row 44 (MONTHLY_PAYING_USERS),forecast
+2024Q2,Total,premium_subs_mau_block,246.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Total,premium_subs_mau_block,252.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Total,premium_subs_mau_block,263.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Total,premium_subs_mau_block,268.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Total,premium_subs_mau_block,276.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Total,premium_subs_mau_block,281.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Total,premium_subs_mau_block,290.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Total,premium_subs_mau_block,293.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Total,premium_subs_mau_block,300.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Total,premium_subs_mau_block,305.14249065217393,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Total,premium_subs_mau_block,315.05755756611177,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Total,premium_subs_mau_block,318.26999647815404,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Total,premium_subs_mau_block,324.8865168511743,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Total,premium_subs_mau_block,330.3989399077803,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Total,premium_subs_mau_block,339.46501515625636,Bloomberg MODL SPOTModelBloom-nums.xlsx row 57 (MONTHLY_ACTIVE_USERS),forecast
+2024Q2,Total,premium_subs_mau_field,246.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2024Q3,Total,premium_subs_mau_field,252.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2024Q4,Total,premium_subs_mau_field,263.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2025Q1,Total,premium_subs_mau_field,268.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2025Q2,Total,premium_subs_mau_field,276.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2025Q3,Total,premium_subs_mau_field,281.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2025Q4,Total,premium_subs_mau_field,290.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2026Q1,Total,premium_subs_mau_field,293.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2026Q2,Total,premium_subs_mau_field,300.0,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),reported
+2026Q3,Total,premium_subs_mau_field,305.14249065217393,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),forecast
+2026Q4,Total,premium_subs_mau_field,315.05755756611177,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),forecast
+2027Q1,Total,premium_subs_mau_field,318.26999647815404,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),forecast
+2027Q2,Total,premium_subs_mau_field,324.8865168511743,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),forecast
+2027Q3,Total,premium_subs_mau_field,330.3989399077803,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),forecast
+2027Q4,Total,premium_subs_mau_field,339.46501515625636,Bloomberg MODL SPOTModelBloom-nums.xlsx row 21 (MONTHLY_ACTIVE_USERS),forecast
