@@ -1,0 +1,29 @@
+metric,window,BR,DE,GB,ID,IN,MX,PH,US
+trends_index:Spotify,Jun-Aug 2025,23.0,27.0,10.0,7.0,11.0,9.0,10.0,15.0
+trends_index:Spotify,Sep15-Dec 2025,9.0,15.0,1.0,1.0,-11.0,-7.0,-2.0,4.0
+trends_index:Spotify,Jun-Jul 2026 (pre friction),-4.0,4.0,5.0,4.0,3.0,-12.0,3.0,-5.0
+trends_index:Spotify,Aug-Sep 2026 (post friction),-14.0,-26.0,10.0,2.0,3.0,-14.0,-1.0,-13.0
+trends_single:Spotify Premium,Jun-Aug 2025,-14.0,33.0,5.0,-25.0,-16.0,-13.0,-13.0,-18.0
+trends_single:Spotify Premium,Sep15-Dec 2025,-33.0,29.0,14.0,-19.0,-31.0,-14.0,-22.0,-23.0
+trends_single:Spotify Premium,Jun-Jul 2026 (pre friction),-11.0,18.0,23.0,-19.0,14.0,-27.0,15.0,-0.0
+trends_single:Spotify Premium,Aug-Sep 2026 (post friction),30.0,-18.0,46.0,33.0,42.0,-8.0,33.0,-11.0
+trends_single:Spotify apk,Jun-Aug 2025,-39.0,84.0,79.0,-29.0,-46.0,-31.0,-51.0,59.0
+trends_single:Spotify apk,Sep15-Dec 2025,-67.0,2.0,-21.0,-58.0,-70.0,-39.0,-71.0,-16.0
+trends_single:Spotify apk,Jun-Jul 2026 (pre friction),-68.0,-74.0,-79.0,-68.0,-46.0,-72.0,-68.0,-71.0
+trends_single:Spotify apk,Aug-Sep 2026 (post friction),-42.0,-62.0,-65.0,-57.0,-27.0,-46.0,-58.0,-59.0
+trends_single:Spotify mod,Jun-Aug 2025,-13.0,109.0,50.0,-47.0,-51.0,14.0,-44.0,81.0
+trends_single:Spotify mod,Sep15-Dec 2025,-55.0,15.0,-17.0,-71.0,-76.0,-9.0,-70.0,7.0
+trends_single:Spotify mod,Jun-Jul 2026 (pre friction),-49.0,-57.0,-59.0,-56.0,-60.0,-60.0,-71.0,-48.0
+trends_single:Spotify mod,Aug-Sep 2026 (post friction),-45.0,-44.0,-30.0,-47.0,-44.0,-64.0,-66.0,-37.0
+trends_single:cancel Spotify,Jun-Aug 2025,,120.0,1.0,300.0,41.0,,17.0,41.0
+trends_single:cancel Spotify,Sep15-Dec 2025,,,31.0,,32.0,,43.0,89.0
+trends_single:cancel Spotify,Jun-Jul 2026 (pre friction),,,28.0,527.0,110.0,,80.0,63.0
+trends_single:cancel Spotify,Aug-Sep 2026 (post friction),,645.0,32.0,6820.0,384.0,,94.0,1.0
+trends_single:cancelar Spotify,Jun-Aug 2025,24.0,,,,,7.0,,
+trends_single:cancelar Spotify,Sep15-Dec 2025,44.0,,,,,31.0,,
+trends_single:cancelar Spotify,Jun-Jul 2026 (pre friction),17.0,,,,,-11.0,,
+trends_single:cancelar Spotify,Aug-Sep 2026 (post friction),-8.0,,,,,-5.0,,
+trends_single:Spotify kündigen,Jun-Aug 2025,,67.0,,,,,,
+trends_single:Spotify kündigen,Sep15-Dec 2025,,61.0,,,,,,
+trends_single:Spotify kündigen,Jun-Jul 2026 (pre friction),,6.0,,,,,,
+trends_single:Spotify kündigen,Aug-Sep 2026 (post friction),,-38.0,,,,,,

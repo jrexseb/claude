@@ -37,3 +37,6 @@ Sept 15, 2025: free tier upgraded globally. ~Aug 1, 2026: free-tier friction in 
 - Play Store reviews and Bloomberg contributor dispersion (research plan workstreams 8-9). Google Trends is now collected (Step 6).
 - Similarweb/Apptopia by country from Bloomberg.
 - JioSaavn (not in Carbon Arc); Amazon Music (not searched).
+
+## Analysis outputs
+- `analysis/01_free_growth_summary.md`: is free-user growth slowing only in friction markets? (app users/downloads by country group, app vs reported free MAU, corroboration). Tables in `analysis/tables/`, script `scripts/10_free_growth_analysis.py`. No final charts yet.
