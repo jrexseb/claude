@@ -1,9 +1,9 @@
 country,cdx_result,captures
-in,2,47
+in,1,47
 id,1,49
-br,1,45
-mx,1,50
+br,4,45
+mx,4,50
 ph,1,39
-us,failed:000,0
-gb,1,60
-de,5,52
+us,1,115
+gb,5,60
+de,2,52

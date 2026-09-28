@@ -22,7 +22,7 @@ kworb.net serves **only the latest chart** (`/spotify/country/{cc}_daily.html`, 
 | GB | 349 | 40 | 53 | |
 | DE | 255 | 57 | 48 | |
 | PH | 163 | **190 (to 2026-09-26)** | 36 | no daily capture from ~Mar 2026 until the live page |
-| BR | 128 | 68 | see `kworb_weekly_charts.csv` | the weekly CDX for BR failed in one run (`000`); counts are from the final run |
+| BR | 128 | 68 | 40 | the weekly CDX for BR failed once (`000`); recovered on rerun |
 | ID | 122 | 86 (to 2026-09-26) | 46 | |
 | MX | 98 | 49 | 45 | |
 | IN | 83 | 67 | 44 | **kworb's India charts stop at 2026-08-26 (daily) and 2026-08-20 (weekly)**; other countries run to 2026-09-26 / 09-24 |
