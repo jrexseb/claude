@@ -12,6 +12,8 @@ Data collection only; no conclusions here. Read `CLAUDE.md` first. Each step's n
 | `data/promo_depth.csv` | spotify.com premium page: list price, trial months, intro price/months by plan; snapshot URL per row | 10 countries (+TR, NG); monthly 2023-01-2026-09 | `03_promos.md` |
 | `data/kworb_streams_daily.csv` | Daily top-200 chart streams sum (captured days only) | 8 countries; 2023-01-2026-09-26; 83-456 days each | `04_kworb.md` |
 | `data/kworb_streams_weekly.csv` | Weekly chart totals (full weeks) plus weekly sum/mean of captured daily charts with `days_observed` | same | `04_kworb.md` |
+| `data/google_trends_weekly.csv` | Google Trends index, 5 terms per request (comparable across terms within a country) | 8 countries; weekly 2023-01-01-2026-09-27 | `05_google_trends.md` |
+| `data/google_trends_single_term_weekly.csv` | Google Trends, one term per request (own scale; low-volume terms) plus local-language cancel terms for BR/MX/DE | same | `05_google_trends.md` |
 | `data/raw/` | Raw pulls, logs, parse audit tables | | |
 
 ## Must-know before analysis
@@ -25,12 +27,13 @@ Data collection only; no conclusions here. Read `CLAUDE.md` first. Each step's n
 8. **kworb India stops at 2026-08-26**, and Jul-Sep 2026 has few captured days in friction markets (IN 4, ID 2) and in the PH control market (1). Captured days are not random (they follow Wayback crawl activity).
 9. **Seasonality and event spikes:** Spotify Wrapped (first week of December; weekly downloads up to +46% in PH, +38% in ID), Christmas/New Year in streams, and Feb 28 billing-date spikes in the ALTD card panel. Weekly WW downloads are +22-23% in the weeks of 2025-09-15/22, which covers the Sept 15, 2025 free-tier upgrade date.
 10. **Price-change timing:** promo prices are dated by the first monthly capture after the change, not the actual change date.
-11. **Carbon Arc spend:** ≈66.7 credits this session (2,000/day limit). Its tables were returned only as markdown via MCP and transcribed to `data/raw/` without edits.
+11. **Google Trends:** a relative index (0-100 per request). Never compare levels across countries or across single-term series. The sampling-noise check was inconclusive (Google served identical cached samples), and English 'cancel Spotify' is mostly 0 outside English markets.
+12. **Carbon Arc spend:** ≈66.7 credits this session (2,000/day limit). Its tables were returned only as markdown via MCP and transcribed to `data/raw/` without edits.
 
 ## Key dates (context)
 Sept 15, 2025: free tier upgraded globally. ~Aug 1, 2026: free-tier friction in India and Indonesia only. Jan 2026: US price increase (US list $12.99 first seen 2026-02). Q3'26 consensus: free 498m, subs 305m, ratio 1.63.
 
 ## Not collected (gaps for a future session)
-- Google Trends, Play Store reviews, and Bloomberg contributor dispersion (research plan workstreams 7-9).
+- Play Store reviews and Bloomberg contributor dispersion (research plan workstreams 8-9). Google Trends is now collected (Step 6).
 - Similarweb/Apptopia by country from Bloomberg.
 - JioSaavn (not in Carbon Arc); Amazon Music (not searched).
