@@ -74,7 +74,9 @@ def parse(html):
         start = max(idx[k - 1][0] + 1 if k else 0, i - 3)
         end = idx[k + 1][0] - 3 if k + 1 < len(idx) else min(len(lines), i + 15)
         block = lines[start:i] + lines[i + 1:max(end, i + 2)]
-        if plan in plans: continue
+        # a plan name can appear several times (e.g. nav menu at top in the 2025-26 layout); keep the first
+        # occurrence whose block yields a list price, otherwise the first occurrence
+        if plan in plans and plans[plan].get("list_price") is not None: continue
         rec = {"block": " | ".join(block)[:400]}
         # list price: a per-month price line; prefer lines mentioning 'after'
         cands = [l for l in block if PRICE.search(l) and PER_MONTH.search(l)]
@@ -97,7 +99,8 @@ def parse(html):
                 n = int([g for g in m.groups() if g and g.isdigit()][-1])
                 if val == 0: rec.setdefault("trial_months", n)
                 else: rec["intro_months"], rec["intro_price"] = n, val
-        plans[plan] = rec
+        if plan not in plans or rec.get("list_price") is not None:
+            plans[plan] = rec
     # headline (first ~15 lines): page-level offer text
     head = " | ".join(lines[:20])[:400]
     return plans, head
