@@ -25,3 +25,26 @@ s = t.groupby(["country", "metric"]).agg(mean=("value", "mean"), zeros=("value",
                                         mad=("abs_diff_pulls", "mean"), maxd=("abs_diff_pulls", "max")).round(2)
 s.to_csv(R / "data/raw/trends_quality.csv")
 print(t.shape, t.date.min(), t.date.max()); print(s.to_string())
+
+# single-term pulls (05c): own scale per country-term -> separate file, metric prefix 'trends_single:'
+S = R / "data/raw/trends_single"
+rows = []
+for f in sorted(S.glob("*.csv")):
+    geo, term = f.stem.split("__"); term = term.replace("_", " ")
+    try:
+        a = pd.read_csv(f, parse_dates=["date"])
+    except Exception:
+        continue
+    if a.empty or term not in a.columns: continue
+    d = a[["date", term, "isPartial"]].rename(columns={term: "value"}).assign(
+        country=geo, metric=f"trends_single:{term}",
+        source="Google Trends via pytrends; single-term request (own 0-100 scale); weekly")
+    rows.append(d)
+if rows:
+    s1 = pd.concat(rows)
+    s1["flag"] = s1.isPartial.map({True: "partial_week", False: ""})
+    s1["date"] = s1.date.dt.strftime("%Y-%m-%d")
+    s1[["date", "country", "metric", "value", "source", "flag"]].sort_values(["country", "metric", "date"]).to_csv(
+        R / "data/google_trends_single_term_weekly.csv", index=False)
+    q = s1.groupby(["country", "metric"]).value.agg(mean="mean", zero_share=lambda x: (x == 0).mean()).round(2)
+    print(q.to_string())
