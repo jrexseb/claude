@@ -1,0 +1,41 @@
+country,metric,mean,zeros,mad,maxd
+BR,trends_index:Spotify,48.45,0.0,0.0,0
+BR,trends_index:Spotify Premium,3.91,0.0,0.0,0
+BR,trends_index:Spotify apk,1.56,0.04,0.0,0
+BR,trends_index:Spotify mod,0.07,0.94,0.0,0
+BR,trends_index:cancel Spotify,0.04,0.96,0.0,0
+DE,trends_index:Spotify,40.18,0.0,0.01,1
+DE,trends_index:Spotify Premium,2.8,0.0,0.0,0
+DE,trends_index:Spotify apk,0.05,0.96,0.0,0
+DE,trends_index:Spotify mod,0.01,0.99,0.0,0
+DE,trends_index:cancel Spotify,0.01,0.99,0.0,0
+GB,trends_index:Spotify,29.47,0.0,0.01,1
+GB,trends_index:Spotify Premium,2.23,0.0,0.0,0
+GB,trends_index:Spotify apk,0.01,0.99,0.0,0
+GB,trends_index:Spotify mod,0.01,0.99,0.0,0
+GB,trends_index:cancel Spotify,0.08,0.93,0.0,0
+ID,trends_index:Spotify,39.54,0.0,0.01,1
+ID,trends_index:Spotify Premium,3.57,0.0,0.0,0
+ID,trends_index:Spotify apk,1.26,0.08,0.0,0
+ID,trends_index:Spotify mod,2.7,0.0,0.0,0
+ID,trends_index:cancel Spotify,0.04,0.96,0.0,0
+IN,trends_index:Spotify,33.47,0.0,0.01,1
+IN,trends_index:Spotify Premium,4.1,0.0,0.0,0
+IN,trends_index:Spotify apk,3.97,0.0,0.0,0
+IN,trends_index:Spotify mod,3.4,0.0,0.0,0
+IN,trends_index:cancel Spotify,0.05,0.95,0.0,0
+MX,trends_index:Spotify,42.17,0.0,0.0,0
+MX,trends_index:Spotify Premium,5.47,0.0,0.0,0
+MX,trends_index:Spotify apk,2.01,0.02,0.0,0
+MX,trends_index:Spotify mod,0.01,0.99,0.0,0
+MX,trends_index:cancel Spotify,0.0,1.0,0.0,0
+PH,trends_index:Spotify,35.73,0.0,0.01,1
+PH,trends_index:Spotify Premium,3.74,0.0,0.0,0
+PH,trends_index:Spotify apk,2.21,0.04,0.0,0
+PH,trends_index:Spotify mod,1.67,0.08,0.0,0
+PH,trends_index:cancel Spotify,0.07,0.93,0.0,0
+US,trends_index:Spotify,34.48,0.0,0.01,1
+US,trends_index:Spotify Premium,1.4,0.0,0.0,0
+US,trends_index:Spotify apk,0.01,0.99,0.0,0
+US,trends_index:Spotify mod,0.0,1.0,0.0,0
+US,trends_index:cancel Spotify,0.03,0.97,0.0,0
