@@ -1,8 +1,8 @@
 # Step 2: Carbon Arc app data
 
 **Outputs**
-- `data/carbonarc_app_spotify.csv`: SPOT ticker; app users YoY and app downloads YoY; monthly and weekly; 9 geographies. 2,016 rows, 0 NaN.
-- `data/carbonarc_app_rivals.csv`: app-level YouTube Music, Apple Music and Spotify (check series); India and Indonesia; monthly. 252 rows.
+- `data/carbonarc_app_spotify.csv`: SPOT ticker; app users YoY and app downloads YoY; monthly and weekly; 9 geographies; **2021-01 to 2026-09**. 6,642 rows, 0 NaN. Has a `precision` column.
+- `data/carbonarc_app_rivals.csv`: app-level YouTube Music, Apple Music and Spotify (check series); India and Indonesia; monthly; **2021-01 to 2026-09**. 828 rows, 0 NaN.
 - `data/reported_kpis_quarterly.csv`: reported Ad-Supported MAU, Premium subs and total MAU (levels, m), 2021Q1 to 2026Q2, from `panel_all.csv`. `mau_total` is missing for 2021Q1 to 2022Q2 in the source panel.
 - Raw responses: `data/raw/carbonarc_*_raw.csv`. Tidy script: `scripts/02_carbonarc_tidy.py`; reported KPIs: `scripts/02b_reported_kpis.py`.
 
@@ -17,20 +17,35 @@
 - **Entity:** SPOT ticker (id 622), as requested. The ticker maps to more than one Spotify app. The main-app entity "Spotify - Music and Podcasts" (id 5395) gives users YoY within 0.37pp of the ticker (mean difference −0.1pp; India/Indonesia monthly).
 - **Date convention:** monthly `date` = month end; weekly `date` = week start (Monday).
 
-## Coverage
+## Coverage (re-pulled 2026-09-28 with full history)
 | Series | Range | Geos | Note |
 |---|---|---|---|
-| Monthly users/downloads YoY | 2025-01 to 2026-09 | 9 | 2024 months are NaN at source; not included |
-| Weekly users/downloads YoY | 2024-12-30 to 2026-09-21 | 9 | requested from 2024-12-30 |
-| Rivals monthly (users, downloads) | 2025-01 to 2026-09 | IN, ID | YouTube Music, Apple Music, Spotify app |
+| Monthly users/downloads YoY | 2021-01 to 2026-09 | 9 | 69 months, no gaps |
+| Weekly users/downloads YoY | week of 2020-12-28 to 2026-09-21 | 9 | 300 weeks, no gaps |
+| Rivals monthly (users, downloads) | 2021-01 to 2026-09 | IN, ID | YouTube Music, Apple Music, Spotify app |
 
-**YoY is NaN for all of 2024**, even though the history is listed from 2014, so the SPOT/app mapping appears to start in 2024. There is no YoY series before Jan 2025, which means no pre-Sept-2025 baseline longer than 8 months.
+**Carbon Arc computes YoY inside the requested date window.** The first pull started at 2024-01-01, so all of 2024 came back NaN; that was a query-window artifact, not missing data. All series were re-pulled with `start_date=2020-01-01`, which yields YoY from 2021-01 (2020 rows are NaN by construction and dropped). **Any future pull must start 12 months before the first YoY month wanted.**
 
-## Precision
-- Monthly SPOT users: 4 decimals (percent). This came from a second call; the first call returned the table rounded to 0.01 in fraction terms (1pp). The two agree at that rounding.
-- Monthly SPOT downloads: 4 decimals.
-- Weekly: 2 decimals (percent).
-- Rivals: full precision (fractions × 100).
+Re-pull checks against the earlier pull on the overlap: max abs difference 0.005pp (monthly users, monthly downloads, weekly users, weekly downloads; 21 months / 91 weeks) and ≤0.005 in fraction (rivals, Jan 2025). The only differences are rounding.
+
+## Precision (`precision` column)
+- **Monthly SPOT users/downloads:** 2 decimals in percent (`0.01pp`), transcribed from the MCP chat table. The monthly downloads table came back **without its month column**; months were assigned by row order (69 rows = 2021-01…2026-09) and verified on the 21-month overlap (max diff 0.005pp).
+- **Weekly SPOT users/downloads:** full precision. The MCP saved these results to file; they were parsed directly (`scripts/02c_carbonarc_parse_saved.py`; verbatim JSON in `data/raw/carbonarc_v2/`). The raw weekly date is the week **end** (Sunday) and is converted to week start (Monday).
+- **Rivals 2021-01 to 2024-12:** fractions to 2 decimals, i.e. **whole-percentage-point precision (`1pp`)**. **Rivals 2025-01 onward:** full precision from the earlier pull.
+
+## Ticker vs Spotify app entity
+The SPOT ticker pools every app mapped to Spotify; the app entity is "Spotify - Music and Podcasts" only. Monthly users YoY, max |ticker − app| by year:
+
+| Year | ID | IN |
+|---|---|---|
+| 2021 | 10.0pp | 2.7pp |
+| 2022 | 1.6 | 1.2 |
+| 2023 | 3.5 | 0.5 |
+| 2024 | 3.3 | 0.6 |
+| 2025 | 0.4 | 0.2 |
+| 2026 | 0.1 | 0.0 |
+
+Up to ±0.5pp is rounding (the app-level series is at 1pp precision in 2021-24). The larger 2021 and 2023-24 Indonesia gaps suggest the ticker includes other Spotify apps (possibly Spotify Lite) in those years. **Not verified.**
 
 ## Flags (`flag` column; values are unchanged)
 - `partial_month_data_to_2026-09-26`: Sep 2026 monthly rows. Sep 2026 monthly downloads are −10% to −37% in every country at once.
@@ -69,9 +84,16 @@
 | 8 | 192635 Android only, app 5395 (diagnostic) | 6.23 |
 | 9 | 522 rivals + Spotify app, IN/ID, month | 4.99 |
 | 10 | 521 rivals + Spotify app, IN/ID, month | 4.99 |
-| | **Session total** | **≈ 66.7** |
+| | **First session total** | **≈ 66.7** |
+| 11 | 522 users YoY, month, IN+US, from 2020-01 (window test) | 4.99 |
+| 12 | 522 users YoY, month, 9 geos, from 2020-01 | 4.99 |
+| 13 | 521 downloads YoY, month, 9 geos, from 2020-01 | 4.99 |
+| 14 | 522 users YoY, week, 9 geos, from 2020-01 | 15.22 |
+| 15 | 521 downloads YoY, week, 9 geos, from 2020-01 | ≈15 |
+| 16-17 | 522/521 rivals + Spotify app, IN/ID, month, from 2020-01 | 4.99 each |
+| | **Re-pull total** | **≈ 55** |
 
 ## Exact framework requests (re-run via `framework_to_insight`)
-- SPOT: `entities=[{carc_id:622, representation:"ticker"}]`, `insight_id` 522 or 521, `location_resolution="country"`, `date_resolution="month"` or `"week"`, `aggregate="mean"`, `filters.country=["Worldwide","United States of America","India","Indonesia","Brazil","Mexico","Philippines","United Kingdom","Germany"]`. Date filters are ignored in the echoed request; the full history is returned.
-- Rivals: `entities=[{6697,"app"},{349,"app"},{5395,"app"}]`, insight 522 or 521, month, `country=["India","Indonesia"]`.
-- The MCP returns a markdown table only (no file download). Tables were transcribed to `data/raw/` without edits.
+- SPOT: `entities=[{carc_id:622, representation:"ticker"}]`, `insight_id` 522 or 521, `location_resolution="country"`, `date_resolution="month"` or `"week"`, `aggregate="mean"`, `filters.country=["Worldwide","United States of America","India","Indonesia","Brazil","Mexico","Philippines","United Kingdom","Germany"]`, `filters.start_date="2020-01-01"`, `end_date="2026-09-28"`. The echoed request omits dates, but they are applied (they change which months get a YoY).
+- Rivals: `entities=[{6697,"app"},{349,"app"},{5395,"app"}]`, insight 522 or 521, month, `country=["India","Indonesia"]`, same dates.
+- The MCP returns a markdown table in chat for small results; those were transcribed to `data/raw/` without edits. Large results are saved to file by the MCP and parsed by script.
