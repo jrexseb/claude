@@ -28,7 +28,7 @@ def curl(url, out=None):
 
 def parse(html):
     s = BeautifulSoup(html, "lxml")
-    m = re.search(r"(\d{4})/(\d{2})/(\d{2})", s.title.text if s.title else "") or re.search(r"Daily Chart - .*? - (\d{4})/(\d{2})/(\d{2})", s.get_text(" "))
+    m = re.search(r"(\d{4})/(\d{2})/(\d{2})", s.title.text if s.title else "") or re.search(r"(?:Daily|Weekly) Chart - .*? - (\d{4})/(\d{2})/(\d{2})", s.get_text(" "))
     t = s.find("table")
     if not (m and t): return None
     hdr = [th.get_text(strip=True) for th in t.find_all("th")]
