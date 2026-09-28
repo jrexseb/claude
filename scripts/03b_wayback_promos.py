@@ -23,15 +23,20 @@ PLAN_NAMES = {  # visible plan header -> canonical plan
     "premium estudiantes": "student", "premium universitários": "student", "premium universitário": "student",
     "premium mahasiswa": "student", "premium öğrenci": "student",
     "mini": "mini", "premium mini": "mini", "lite": "lite", "premium lite": "lite",
+    # 2025-26 tiered markets (e.g. India): kept as their own plans, NOT mapped to individual
+    "standard": "standard", "premium standard": "standard", "platinum": "platinum", "premium platinum": "platinum",
+    "basic": "basic", "premium basic": "basic",
 }
-CUR = r"(₹|Rp\.?\s?|R\$\s?|MX\$|\$|US\$|£|€|₺|TL\s?|₱|PHP\s?|₦|NGN\s?)"
+CUR = r"(₹|Rs\.?\s?|IDR\s?|Rp\.?\s?|R\$\s?|MX\$|US\$|\$|£|€|₺|TRY\s?|TL\s?|₱|PHP\s?|₦|NGN\s?)"
 NUM = r"(\d{1,3}(?:[.,\s]\d{3})*(?:[.,]\d{1,2})?|\d+(?:[.,]\d{1,2})?)"
 PRICE = re.compile(CUR + r"\s?" + NUM + r"|" + NUM + r"\s?(€|TL|₺)")
-PER_MONTH = re.compile(r"/\s?(month|mo|mes|mês|monat|ay|bulan|buwan)|per month|a month|pro monat|por mes|por mês|per bulan|aylık|/mês", re.I)
+PER_MONTH = re.compile(r"/\s?(month|mo|mes|mês|monat|ay|bulan|buwan)|per month|a month|pro monat|por mes|por mês|per bulan|aylık|ayda|al mes|/mês|im monat|bawat buwan", re.I)
 FREE_N = re.compile(r"(\d+|one|two|three|four|six|1|un|um|dos|três|tres|satu|bir)\s*(month|months|mes|meses|mês|monat|monate|ay|bulan)\s*(free|gratis|grátis|kostenlos|ücretsiz|gratuit)|"
                     r"(free|gratis|grátis|kostenlos|ücretsiz)\s*(for\s*)?(\d+)\s*(month|months|mes|meses|monat|monate|ay|bulan)", re.I)
-N_FOR_PRICE = re.compile(r"(\d+)\s*(month|months|mes|meses|mês|monat|monate|ay|bulan)\s*(for|por|für|için|seharga|untuk)\s*" + r"(?:" + CUR + r"\s?" + NUM + r"|" + NUM + r"\s?(€|TL|₺))", re.I)
-PRICE_FOR_N = re.compile(r"(?:" + CUR + r"\s?" + NUM + r"|" + NUM + r"\s?(€|TL|₺))\s*(for|por|für|için|untuk|selama)\s*(\d+)\s*(month|months|mes|meses|mês|monat|monate|ay|bulan)", re.I)
+UNIT = r"(month|months|mes|meses|mês|monat|monate|ay|bulan|year|years|tahun|año|años|ano|anos|jahr|yıl)"
+YEARS = re.compile(r"year|tahun|año|ano|jahr|yıl", re.I)
+N_FOR_PRICE = re.compile(r"(\d+)\s*(month|months|mes|meses|mês|monat|monate|ay|bulan|year|years|tahun|año|años|ano|anos|jahr|yıl)\s*(for|por|für|için|seharga|untuk)\s*" + r"(?:" + CUR + r"\s?" + NUM + r"|" + NUM + r"\s?(€|TL|₺))", re.I)
+PRICE_FOR_N = re.compile(r"(?:" + CUR + r"\s?" + NUM + r"|" + NUM + r"\s?(€|TL|₺))\s*(for|por|für|için|untuk|selama)\s*(\d+)\s*(month|months|mes|meses|mês|monat|monate|ay|bulan|year|years|tahun|año|años|ano|anos|jahr|yıl)", re.I)
 WORDNUM = {"one": 1, "two": 2, "three": 3, "four": 4, "six": 6, "un": 1, "um": 1, "dos": 2, "três": 3, "tres": 3, "satu": 1, "bir": 1}
 
 def fetch(ts, original):
@@ -64,26 +69,56 @@ def first_price(txt):
     cur = (m.group(1) or m.group(4) or "").strip(); val = m.group(2) or m.group(3)
     return cur, num(val)
 
+def month_price(txt):
+    """price immediately before the first per-month token (e.g. '₹799 for 1 year, then ₹139 per month' -> ₹139)"""
+    pm = PER_MONTH.search(txt)
+    if not pm: return None, None
+    ms = [m for m in PRICE.finditer(txt) if m.start() < pm.start()]
+    if ms: m = ms[-1]
+    else:  # word order with the per-month word first (e.g. Turkish 'ayda 20,99 TL')
+        ms = [m for m in PRICE.finditer(txt) if m.start() >= pm.start()]
+        if not ms: return None, None
+        m = ms[0]
+    return (m.group(1) or m.group(4) or "").strip(), num(m.group(2) or m.group(3))
+
+def join_split(lines):
+    """merge a price-only line with a following per-month-only line ('£14.99' + 'PER MONTH')"""
+    out, i = [], 0
+    while i < len(lines):
+        if i + 1 < len(lines) and PRICE.fullmatch(lines[i].strip()) and PER_MONTH.search(lines[i + 1]) and not PRICE.search(lines[i + 1]):
+            out.append(lines[i] + " " + lines[i + 1]); i += 2
+        else:
+            out.append(lines[i]); i += 1
+    return out
+
 def parse(html):
-    lines = [l.strip() for l in BeautifulSoup(html, "lxml").get_text("\n", strip=True).split("\n") if l.strip()]
-    idx = [(i, PLAN_NAMES[l.lower()]) for i, l in enumerate(lines) if l.lower() in PLAN_NAMES]
+    """Structural card parse: for each element whose own text is a plan name, climb to the smallest ancestor that
+    contains a per-month price and no OTHER plan-name element; that ancestor's text is the plan card."""
+    soup = BeautifulSoup(html, "lxml")
+    lines = [l.strip() for l in soup.get_text("\n", strip=True).split("\n") if l.strip()]
+    name_nodes = [t for t in soup.find_all(string=True) if t.strip().lower() in PLAN_NAMES
+                  and t.parent.name not in ("script", "style", "title", "option", "a")]
     plans = {}
-    for k, (i, plan) in enumerate(idx):
-        # offer badges ("1 month free") sit just ABOVE the plan name, so each block starts up to 3 lines before
-        # the name (but not before the previous plan's name) and ends 3 lines before the next plan's name.
-        start = max(idx[k - 1][0] + 1 if k else 0, i - 3)
-        end = idx[k + 1][0] - 3 if k + 1 < len(idx) else min(len(lines), i + 15)
-        block = lines[start:i] + lines[i + 1:max(end, i + 2)]
-        # a plan name can appear several times (e.g. nav menu at top in the 2025-26 layout); keep the first
-        # occurrence whose block yields a list price, otherwise the first occurrence
-        if plan in plans and plans[plan].get("list_price") is not None: continue
+    for node in name_nodes:
+        plan = PLAN_NAMES[node.strip().lower()]
+        el, card = node.parent, None
+        for _ in range(8):
+            el = el.parent
+            if el is None: break
+            others = [t for t in el.find_all(string=True) if t.strip().lower() in PLAN_NAMES
+                      and PLAN_NAMES[t.strip().lower()] != plan and t.parent.name not in ("script", "style", "a")]
+            if others: break
+            txt = el.get_text("\n", strip=True)
+            if any(PRICE.search(l) and PER_MONTH.search(l) for l in join_split(txt.split("\n"))):
+                card = txt; break
+        if card is None:
+            continue
+        block = join_split([l.strip() for l in card.split("\n") if l.strip()])
         rec = {"block": " | ".join(block)[:400]}
-        # list price: a per-month price line; prefer lines mentioning 'after'
         cands = [l for l in block if PRICE.search(l) and PER_MONTH.search(l)]
         after = [l for l in cands if re.search(r"after|depois|después|danach|sonra|setelah|berikutnya|luego|thereafter", l, re.I)]
-        pl = (after or cands or [None])[0]
-        if pl: rec["currency"], rec["list_price"] = first_price(pl)
-        # intro offers
+        pl = (after or cands)[0]
+        rec["currency"], rec["list_price"] = month_price(pl)
         for l in block:
             m = FREE_N.search(l)
             if m and "trial_months" not in rec:
@@ -91,17 +126,30 @@ def parse(html):
             m = N_FOR_PRICE.search(l)
             if m and "intro_months" not in rec:
                 cur, val = first_price(l[m.start(3):])
-                if val == 0: rec.setdefault("trial_months", int(m.group(1)))
-                else: rec["intro_months"], rec["intro_price"] = int(m.group(1)), val
+                n = int(m.group(1)) * (12 if YEARS.search(m.group(2)) else 1)
+                if val == 0: rec.setdefault("trial_months", n)
+                else: rec["intro_months"], rec["intro_price"] = n, val
             m = PRICE_FOR_N.search(l)
             if m and "intro_months" not in rec:
                 cur, val = first_price(l)
-                n = int([g for g in m.groups() if g and g.isdigit()][-1])
+                n = int([g for g in m.groups() if g and g.isdigit()][-1]) * (12 if YEARS.search(m.group(0)[-12:]) else 1)
                 if val == 0: rec.setdefault("trial_months", n)
                 else: rec["intro_months"], rec["intro_price"] = n, val
-        if plan not in plans or rec.get("list_price") is not None:
+        if plan not in plans:
             plans[plan] = rec
-    # headline (first ~15 lines): page-level offer text
+        elif plans[plan].get("list_price") != rec.get("list_price"):
+            # same plan on another card (e.g. prepaid / annual variant); first card kept, others recorded for audit
+            plans[plan]["multiple_cards_conflict"] = True
+            plans[plan]["other_card_prices"] = (str(plans[plan].get("other_card_prices", "")) + f" {rec.get('list_price')}|{rec['block'][:80]}").strip()
+    # page-level FAQ sentence (English pages): "The Spotify Premium Individual plan costs $10.99 per month, the
+    # Premium Duo plan costs ..." -> faq_list_price per plan. Only 'per month' phrasings are taken.
+    full = " ".join(lines)
+    for m in re.finditer(r"Premium (Individual|Duo|Family|Student) plan costs (.{1,25}?) per month", full):
+        plan = m.group(1).lower(); cur, val = first_price(m.group(2))
+        if val is not None:
+            plans.setdefault(plan, {"block": ""})
+            plans[plan].setdefault("faq_list_price", val); plans[plan].setdefault("faq_currency", cur)
+    # headline (first ~20 lines): page-level offer text
     head = " | ".join(lines[:20])[:400]
     return plans, head
 
@@ -124,8 +172,14 @@ if __name__ == "__main__":
         if not plans:
             out.append({**base, "plan": "", "parse_status": "no_plan_blocks_found", "headline_text": head}); continue
         for plan, rec in plans.items():
+            # final list price: plan-card price; FAQ sentence as fallback. Source recorded; conflicts flagged.
+            card, faq = rec.get("list_price"), rec.get("faq_list_price")
+            rec["list_price_card"] = card
+            if card is None and faq is not None:
+                rec["list_price"], rec["currency"] = faq, rec.get("faq_currency")
+            rec["list_price_source"] = "card" if card is not None else ("faq" if faq is not None else "")
+            rec["card_faq_conflict"] = bool(card is not None and faq is not None and abs(card - faq) > 0.001)
             st = "ok" if rec.get("list_price") is not None else "no_list_price"
             out.append({**base, "plan": plan, **rec, "headline_text": head, "parse_status": st})
-        time.sleep(1.5)
     pd.DataFrame(out).to_csv(R / "data/raw/promo_parsed_wide.csv", index=False)
     print("rows", len(out))
